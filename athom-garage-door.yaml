@@ -47,7 +47,7 @@ binary_sensor:
     id: contact
     pin:
       number: GPIO4
-      inverted: true
+      inverted: false
     filters:
       - delayed_on: 20ms
 
@@ -55,7 +55,7 @@ binary_sensor:
     pin:
       number: GPIO14
       mode: INPUT_PULLUP
-      inverted: true
+      inverted: false
     name: "${friendly_name} Button"
     disabled_by_default: true
     on_multi_click:
